@@ -1,4 +1,4 @@
-<?= form_open("/grupo/recibirdatos") ?>
+<?= form_open("/cursos/recibirdatos") ?>
 
 <?php
  $nombre = array(

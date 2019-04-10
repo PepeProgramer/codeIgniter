@@ -30,21 +30,7 @@ class Grupo extends CI_Controller {
 	{
 		$this->load->library('Menu', array('inicio', 'contacto', 'cursos'));
 
-
-
 	}
 
-	public function nuevo(){
-		$this->load->view('grupo/header');
-		$this->load->view('grupo/formulario');
-	}
 
-	public function recibirDatos(){
-		$data = array(
-			'nombre' => $this->input->post('nombre'),
-			'videos' => $this->input->post('videos')
-		);
-		$this->grupo_model->crearCurso($data);
-		$this->load->view('welcome_message');
-	}
 }
